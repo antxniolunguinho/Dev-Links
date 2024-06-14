@@ -89,11 +89,14 @@ body * {
     top: 50%;
     z-index: 1;
     transform: translateY(-50%);
+
+    animation: switch-slide-out 350ms;
+    transition: outline 150ms;
+    cursor: pointer;
 }
 
 .light #switch button {
-    right: 0;
-    left: initial;
+    animation: switch-slide-in 350ms forwards;
 }
 
 #switch span {
@@ -182,4 +185,27 @@ ul li a:hover{
 #social-links a:hover{
     background: var(--highlight-color);
     padding: 1rem;
+}
+
+#switch button:hover{
+    outline: 8px solid var(--highlight-color);
+}
+
+/* animation */
+
+@keyframes switch-slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+@keyframes switch-slide-out {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
 }
