@@ -180,7 +180,7 @@ footer {
 
 ul li a:hover {
     background: var(--surface-color-hover);
-    border: 1.5px solid var(--text-color);
+    border: 1px solid var(--text-color);
 }
 #social-links a:hover {
     background: var(--highlight-color);
