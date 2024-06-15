@@ -118,7 +118,7 @@ body * {
     width: 270px;
     margin: 50px auto 0px;
     font-size: 24px;
-    /*ou também pode usar
+    /*ou também pode ser
     display: flex;
     justify-content: center;
     gap: 32px;
