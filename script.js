@@ -1,5 +1,5 @@
 function toggleMode() {
-    const html = document.documentElement
+    const html = document.documentElement;
     // document.documentElement equivale a como se fosse
     // document.querySelector('html') porém não tem como selecionar desse jeito
 
@@ -8,13 +8,13 @@ function toggleMode() {
     } else {
         html.classList.add('light')
     }*/
-    html.classList.toggle('light')
+    html.classList.toggle('light');
     /*a classe html troca para 'light'*/
 
-    const pfp = document.querySelector('#profile img')
+    const pfp = document.querySelector('#profile img');
     if(html.classList.contains('light')){
-        pfp.setAttribute('src', './assets/avatar-light.png')
+        pfp.setAttribute('src', './assets/avatar-light.png');
     } else {
-        pfp.setAttribute('src', './assets/avatar.png')
+        pfp.setAttribute('src', './assets/avatar.png');
     }
 }
